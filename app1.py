@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 import streamlit
 
-loaded_model= pickle.load(open(r'C:\Users\ROHAN\Downloads\ML Deploy\trained_model.sav','rb'))
+loaded_model= pickle.load(open('trained_model.sav','rb'))
 
 import warnings
 warnings.filterwarnings('ignore')
