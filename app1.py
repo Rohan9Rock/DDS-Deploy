@@ -2,8 +2,9 @@ import numpy as np
 import pickle
 import streamlit
 
-loaded_model= pickle.load(open('trained_model.sav','rb'))
-
+with open('trained_model.sav', 'rb') as f:
+    loaded_model = pickle.load(f)
+    
 import warnings
 warnings.filterwarnings('ignore')
 
