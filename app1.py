@@ -2,6 +2,9 @@ import numpy as np
 import pickle
 import streamlit
 
+from sklearn.svm import SVC
+classifier = SVC()
+
 with open('trained_model.sav', 'rb') as f:
     loaded_model = pickle.load(f)
     
